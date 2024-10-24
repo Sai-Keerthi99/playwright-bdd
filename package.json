@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.7.4",
+    "dotenv": "^16.4.5",
+    "playwright-bdd": "^7.5.0"
+  },
+  "scripts": {
+    "bddgen": "npx bddgen",
+    "bc-tests": "npx bddgen && npx playwright test --project=bc-tests",
+    "integ-tests": "npx bddgen && npx playwright test --project=integ-tests",
+    "pc-tests": "npx bddgen && npx playwright test --project=pc-tests",
+    "test" : "npx bddgen && npx playwright test"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
